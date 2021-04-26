@@ -1,0 +1,114 @@
+.emp__details p:nth-child(1) {
+  font-size: 1rem;
+
+  font-weight: bold;
+  text-align: start;
+}
+.emp__details p:nth-child(2) {
+  font-size: 0.8rem;
+
+  margin-top: 10px;
+}
+
+.emp__details {
+  /* display: flex; */
+}
+
+.emp__details__container {
+  /* height: 60vh; */
+  min-width: 90vw;
+
+  margin: 0 auto;
+  background-color: white;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
+  /* margin-top: 20px; */
+}
+
+.emp__details__container:hover {
+  background-color: rgb(131, 131, 138);
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 2px 0px 2px 2px rgb(150, 148, 148);
+}
+
+.emp__details__container:hover .emp__img {
+  /* border-radius: 0px 0px 10px 2px black; */
+}
+
+.emp__info {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-around;
+  padding: 10px 30px;
+  border-bottom: 4px solid whitesmoke;
+  border-top: 4px solid whitesmoke;
+  align-items: center;
+}
+
+.emp__img {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.emp__info p:not(.emp_name, .emp_email, .desg) {
+  font-size: 1.2rem;
+  font-family: bold;
+  text-transform: capitalize;
+  /* text-align: start; */
+  /* letter-spacing: 0.125rem; */
+}
+
+.emp__img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  object-fit: cover;
+  position: center;
+}
+
+.home__icon {
+  color: red;
+  margin: 0 5px;
+}
+
+.emp_delete {
+  background-color: transparent;
+  border: none;
+  margin: 0px 15px;
+  padding: 0px 0px;
+}
+
+.items {
+  flex: 1;
+  justify-content: start;
+}
+
+.delete__empName {
+  font-family: bold !important;
+  font-size: 1.5rem !important;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .phoneNo,
+  .joingDate,
+  .desg {
+    display: none;
+  }
+  .emp__details__container {
+    width: 100%;
+  }
+  .emp__img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    position: center;
+  }
+}

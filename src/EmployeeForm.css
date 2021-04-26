@@ -1,0 +1,10 @@
+.btn {
+  padding: 10px 25px;
+  /* width: 100%; */
+  /* background-color: blueviolet; */
+}
+.form_btn{
+    background-color: darkblue;
+    width: 100%;
+    color: white;
+}
